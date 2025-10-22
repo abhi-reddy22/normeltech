@@ -19,7 +19,7 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
   @ViewChild('mainContent') mainContent!: ElementRef<HTMLElement>;
   currentYear = new Date().getFullYear();
 
-  videos = ['assets/video1.mp4', 'assets/video2.mp4', 'assets/video3.mp4'];
+  videos = ['assets/video1.mp4', 'assets/video2.mp4', 'assets/video3.mp4', 'assets/video4.mp4'];
   currentVideoIndex = 0;
   isMenuOpen = false;
   touchStartX = 0;

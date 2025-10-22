@@ -131,31 +131,23 @@
 
     <!-- Centered Overlay Text & Buttons -->
     <div
-      class="relative z-10 flex flex-col items-center justify-center text-center text-white px-4 sm:px-6 max-w-3xl mx-auto">
-      <!-- Tagline -->
-      <p class="text-xs sm:text-sm font-semibold text-red-400 mb-3 tracking-wider uppercase drop-shadow-lg">
-        Your Trusted IT Partner Since 2006
-      </p>
-
-      <!-- Main Heading -->
-      <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 drop-shadow-2xl leading-tight">
-        Welcome to <span class="text-red-500">NormelTech</span>
-      </h1>
-
+      class="absolute bottom-[22%] sm:bottom-[25%] left-1/2 -translate-x-1/2 z-10 flex flex-col items-center text-center text-white px-4 sm:px-6 max-w-2xl w-full">
       <!-- Value Proposition -->
-      <p class="text-base sm:text-lg md:text-xl font-medium mb-8 sm:mb-10 max-w-2xl leading-relaxed drop-shadow-lg">
+      <p class="text-sm sm:text-base md:text-lg font-semibold mb-3 sm:mb-4 leading-relaxed
+             text-red-100 drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">
         Expert IT Solutions for Healthcare, Business & Government
       </p>
 
       <!-- Single Primary CTA -->
       <button (click)="scrollTo('contact')" (keydown.enter)="scrollTo('contact')"
-        (keydown.space)="scrollTo('contact'); $event.preventDefault()" class="px-8 sm:px-10 py-3.5 sm:py-4 text-base sm:text-lg font-bold
-             bg-gradient-to-r from-red-600 to-red-700 text-white rounded-full shadow-2xl
+        (keydown.space)="scrollTo('contact'); $event.preventDefault()" class="px-6 sm:px-8 py-2.5 sm:py-3 text-sm sm:text-base font-semibold
+             bg-gradient-to-r from-red-600 to-red-700 text-white rounded-full 
+             border-2 border-red-500
              hover:from-red-700 hover:to-red-800 hover:scale-105 hover:shadow-red-500/50
              focus:outline-none focus:ring-4 focus:ring-red-500/60
              transition-all duration-300 transform
-             border-2 border-red-500" aria-label="Get a free consultation - navigate to contact form">
-        Get Free Consultation
+             shadow-2xl" aria-label="Get a free consultation - navigate to contact form">
+        Have a great day! ✨
       </button>
     </div>
 

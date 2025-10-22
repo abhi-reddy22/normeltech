@@ -87,21 +87,17 @@
           border-b border-red-700/30 shadow-[0_10px_40px_rgba(220,38,38,0.2)]" [ngClass]="isMenuOpen ? '' : 'hidden'"
     (keydown.escape)="closeMenu()">
     <ul class="px-6 py-4 flex flex-col gap-1 text-gray-100">
-      <li><a (click)="scrollToAndClose('home')" class="block w-full rounded-lg px-4 py-3 text-base font-semibold 
-                 hover:bg-red-600/20 hover:text-red-400
-                 transition-all duration-300 border-l-2 border-transparent hover:border-red-500">Home</a>
+      <li><a (click)="scrollToAndClose('home')" [class.text-red-400]="activeSection === 'home'"
+          class="block w-full rounded-lg px-4 py-3 text-base font-semibold hover:text-red-400 transition-all duration-300">Home</a>
       </li>
-      <li><a (click)="scrollToAndClose('about')" class="block w-full rounded-lg px-4 py-3 text-base font-semibold 
-                 hover:bg-red-600/20 hover:text-red-400
-                 transition-all duration-300 border-l-2 border-transparent hover:border-red-500">About</a>
+      <li><a (click)="scrollToAndClose('about')" [class.text-red-400]="activeSection === 'about'"
+          class="block w-full rounded-lg px-4 py-3 text-base font-semibold hover:text-red-400 transition-all duration-300">About</a>
       </li>
-      <li><a (click)="scrollToAndClose('services')" class="block w-full rounded-lg px-4 py-3 text-base font-semibold 
-                 hover:bg-red-600/20 hover:text-red-400
-                 transition-all duration-300 border-l-2 border-transparent hover:border-red-500">Services</a>
+      <li><a (click)="scrollToAndClose('services')" [class.text-red-400]="activeSection === 'services'"
+          class="block w-full rounded-lg px-4 py-3 text-base font-semibold hover:text-red-400 transition-all duration-300">Services</a>
       </li>
-      <li><a (click)="scrollToAndClose('contact')" class="block w-full rounded-lg px-4 py-3 text-base font-semibold 
-                 hover:bg-red-600/20 hover:text-red-400
-                 transition-all duration-300 border-l-2 border-transparent hover:border-red-500">Contact</a>
+      <li><a (click)="scrollToAndClose('contact')" [class.text-red-400]="activeSection === 'contact'"
+          class="block w-full rounded-lg px-4 py-3 text-base font-semibold hover:text-red-400 transition-all duration-300">Contact</a>
       </li>
     </ul>
   </div>

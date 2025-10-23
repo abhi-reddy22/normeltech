@@ -1,0 +1,16 @@
+{
+  "name": "NormelTech",
+  "short_name": "NormelTech",
+  "description": "Expert IT Solutions for Healthcare, Business & Government",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#dc2626",
+  "icons": [
+    {
+      "src": "assets/img/fav-icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
